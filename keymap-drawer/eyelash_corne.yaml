@@ -44,12 +44,12 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - LGUI
-  - {t: Navegation, h: toggle}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
+  - {t: NVGTN, h: toggle}
+  - {t: '$$mdi:keyboard-space$$', h: Fn|SYS}
+  - {t: '$$mdi:keyboard-return$$', h: Fn|SYS}
   - {t: NUMBER, h: toggle}
   - $$mdi:apple-keyboard-option$$
-  Navegation:
+  NVGTN:
   - $$mdi:keyboard-tab$$
   - PG DN
   - PG UP
@@ -63,7 +63,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: MNav, h: toggle}
+  - {t: MsNav, h: toggle}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -93,12 +93,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-command$$
-  - {t: Navegation, h: toggle}
+  - {t: NVGTN, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: Navegation, h: toggle}
+  - {t: NVGTN, h: toggle}
   - $$mdi:apple-keyboard-option$$
-  MNav:
+  MsNav:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -112,7 +112,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: MNav, h: toggle}
+  - {t: MsNav, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB4'
@@ -142,10 +142,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: MNav, h: toggle}
+  - {t: MsNav, h: toggle}
   - '&mkp MB1'
   - '&mkp MB2'
-  - {t: MNav, h: toggle}
+  - {t: MsNav, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -161,7 +161,7 @@ layers:
   - {t: '-', s: _}
   - +
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: SYMBOL, h: toggle}
+  - {t: Fn|SYS, h: toggle}
   - {t: '0', s: )}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
@@ -177,7 +177,7 @@ layers:
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB OFF
+  - RGB TOG
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -190,13 +190,13 @@ layers:
   - '#'
   - '|'
   - {t: ., s: '>'}
-  - {t: SYMBOL, h: toggle}
+  - {t: Fn|SYS, h: toggle}
   - {t: NUMBER, h: toggle}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: NUMBER, h: toggle}
-  - {t: SYMBOL, h: toggle}
-  SYMBOL:
+  - {t: Fn|SYS, h: toggle}
+  Fn|SYS:
   - F18
   - F15
   - F7
@@ -239,12 +239,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
-  - {t: SYMBOL, h: toggle}
+  - {t: Fn|SYS, h: toggle}
   - {t: qwerty, h: toggle}
   - {t: '$$mdi:keyboard-space$$', type: held}
   - {t: '$$mdi:keyboard-return$$', type: held alternate}
   - {t: qwerty, h: toggle}
-  - {t: SYMBOL, h: toggle}
+  - {t: Fn|SYS, h: toggle}
 combos:
 - p: [2, 3]
   k: <
