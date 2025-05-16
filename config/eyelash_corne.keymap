@@ -186,10 +186,10 @@
         default {
             display-name = "QWERTY";
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SQT   &kp ESC
-&kp LEFT_SHIFT    &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                                &kp LGUI  &mo 1  &lt 4 SPACE                                               &lt 4 ENTER  &mo 3  &kp RALT
+&kp TAB           &kp Q  &kp W  &kp E     &kp R   &kp T                               &kp UP                &kp Y        &kp U   &kp I      &kp O    &kp P     &kp BSPC
+&kp LEFT_CONTROL  &kp A  &kp S  &kp D     &kp F   &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J   &kp K      &kp L    &kp SQT   &kp ESC
+&kp LEFT_SHIFT    &kp Z  &kp X  &kp C     &kp V   &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                                &kp LGUI  &tog 1  &lt 4 SPACE                                               &lt 4 ENTER  &tog 3  &kp RALT
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -199,7 +199,7 @@
         Navegation {
             bindings = <
 &kp TAB  &kp PG_DN     &kp PG_UP     &kp INS         &kp N4            &kp N5                      &kp UP               &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&mo 2    &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &trans            &kp LEFT  &kp RET   &kp RIGHT  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
+&tog 2   &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &trans            &kp LEFT  &kp RET   &kp RIGHT  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
 &trans   &trans        &trans        &trans          &trans            &trans  &trans              &kp DOWN             &kp DEL   &kp HOME  &kp END   &trans     &trans  &trans
                                      &kp LEFT_GUI    &tog 1            &trans                                           &kp RET   &tog 1    &kp LALT
             >;
@@ -222,9 +222,9 @@
             display-name = "NUMBER";
             bindings = <
 &trans  &trans           &kp N7  &kp N8  &kp N9  &trans                            &kp UP               &kp UNDER  &kp AMPERSAND  &kp STAR     &kp MINUS  &kp PLUS  &kp BSPC
-&mo 4   &kp N0           &kp N4  &kp N5  &kp N6  &trans                  &kp LEFT  &kp RET   &kp RIGHT  &kp EQUAL  &kp DLLR       &kp PERCENT  &kp CARET  &kp BSLH  &kp GRAVE
+&tog 4  &kp N0           &kp N4  &kp N5  &kp N6  &trans                  &kp LEFT  &kp RET   &kp RIGHT  &kp EQUAL  &kp DLLR       &kp PERCENT  &kp CARET  &kp BSLH  &kp GRAVE
 &trans  &rgb_ug RGB_OFF  &kp N1  &kp N2  &kp N3  &trans     &kp SPACE              &kp DOWN             &kp MINUS  &kp EXCL       &kp AT       &kp POUND  &kp PIPE  &kp DOT
-                                 &mo 4   &tog 3  &kp SPACE                                              &kp RET    &tog 3         &mo 4
+                                 &tog 4  &tog 3  &kp SPACE                                              &kp RET    &tog 3         &tog 4
             >;
 
             sensor-bindings = <&scroll_encoder>;
