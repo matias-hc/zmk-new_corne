@@ -50,6 +50,136 @@
         tap-ms = <100>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        cbLT {
+            bindings = <&kp LT>;
+            key-positions = <2 3>;
+            layers = <0 3>;
+        };
+
+        cbLBrk {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <3 4>;
+            layers = <0 3>;
+        };
+
+        cbAst {
+            bindings = <&kp ASTERISK>;
+            key-positions = <3 9>;
+            layers = <0 3>;
+        };
+
+        cbPls {
+            bindings = <&kp PLUS>;
+            key-positions = <4 8>;
+            layers = <0 3>;
+        };
+
+        cbRBrk {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <8 9>;
+            layers = <0 3>;
+        };
+
+        cbGT {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <9 10>;
+            layers = <0 3>;
+        };
+
+        cbTld {
+            bindings = <&kp TILDE>;
+            key-positions = <14 15>;
+            layers = <0 3>;
+        };
+
+        cbGrv {
+            bindings = <&kp GRAVE>;
+            key-positions = <15 16>;
+            layers = <0 3>;
+        };
+
+        cbLPrts {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <16 17>;
+            layers = <0 3>;
+        };
+
+        cbDllr {
+            bindings = <&kp DOLLAR>;
+            key-positions = <16 24>;
+            layers = <0 3>;
+        };
+
+        cbEql {
+            bindings = <&kp EQUAL>;
+            key-positions = <17 23>;
+            layers = <0 3>;
+        };
+
+        cbAmpsd {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <18 22>;
+            layers = <0 3>;
+        };
+
+        cbRPrntss {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <23 24>;
+            layers = <0 3>;
+        };
+
+        cbCln {
+            bindings = <&kp COLON>;
+            key-positions = <24 25>;
+            layers = <0 3>;
+        };
+
+        cbBkslsh {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <25 26>;
+            layers = <0 3>;
+        };
+
+        cbPp {
+            bindings = <&kp PIPE>;
+            key-positions = <30 31>;
+            layers = <0 3>;
+        };
+
+        cbLBrc {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <31 32>;
+            layers = <0 3>;
+        };
+
+        cbCpsLk {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <28 41>;
+            layers = <0 3>;
+        };
+
+        cbExcl {
+            bindings = <&kp EXCL>;
+            key-positions = <31 38>;
+            layers = <0 3>;
+        };
+
+        cbMns {
+            bindings = <&kp MINUS>;
+            key-positions = <32 37>;
+            layers = <0 3>;
+        };
+
+        cbUndscr {
+            bindings = <&kp UNDER>;
+            key-positions = <33 36>;
+            layers = <0 3>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -69,9 +199,9 @@
         Navegation {
             bindings = <
 &kp TAB  &kp PG_DN     &kp PG_UP     &kp INS         &kp N4            &kp N5                      &kp UP               &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&tog 2   &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &trans            &kp LEFT  &kp RET   &kp RIGHT  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
+&mo 2    &sk LEFT_GUI  &sk LEFT_ALT  &sk LEFT_SHIFT  &sk LEFT_CONTROL  &trans            &kp LEFT  &kp RET   &kp RIGHT  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
 &trans   &trans        &trans        &trans          &trans            &trans  &trans              &kp DOWN             &kp DEL   &kp HOME  &kp END   &trans     &trans  &trans
-                                     &kp LEFT_GUI    &to 0             &trans                                           &kp RET   &to 0     &kp LALT
+                                     &kp LEFT_GUI    &tog 1            &trans                                           &kp RET   &tog 1    &kp LALT
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
@@ -82,7 +212,7 @@
 &trans  &trans  &trans  &trans    &trans    &trans                        &trans            &trans          &trans          &trans        &trans           &trans  &trans
 &tog 2  &trans  &trans  &mkp MB4  &mkp MB3  &mkp MB5              &trans  &mkp MB2  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans    &trans    &trans    &mkp MB1            &trans            &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
-                        &trans    &to 0     &mkp MB1                                        &mkp MB2        &to 0           &trans
+                        &trans    &tog 2    &mkp MB1                                        &mkp MB2        &tog 2          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -91,10 +221,10 @@
         NUMBER {
             display-name = "NUMBER";
             bindings = <
-&trans  &trans           &kp N7  &kp N8  &kp N9  &kp DOT                           &kp UP               &kp LS(UNDER)  &kp LS(AMPS)  &kp LS(STAR)   &kp MINUS      &kp LS(PLUS)  &kp BSPC
-&tog 4  &kp N0           &kp N4  &kp N5  &kp N6  &kp DOT                 &kp LEFT  &kp RET   &kp RIGHT  &kp EQUAL      &kp LS(DLLR)  &kp LS(PRCNT)  &kp DOT        &kp BSLH      &kp GRAVE
-&trans  &rgb_ug RGB_OFF  &kp N1  &kp N2  &kp N3  &kp DOT    &kp SPACE              &kp DOWN             &kp MINUS      &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(PIPE)  &kp DOT
-                                 &tog 4  &to 0   &kp SPACE                                              &kp RET        &to 0         &tog 4
+&trans  &trans           &kp N7  &kp N8  &kp N9  &trans                            &kp UP               &kp UNDER  &kp AMPERSAND  &kp STAR     &kp MINUS  &kp PLUS  &kp BSPC
+&mo 4   &kp N0           &kp N4  &kp N5  &kp N6  &trans                  &kp LEFT  &kp RET   &kp RIGHT  &kp EQUAL  &kp DLLR       &kp PERCENT  &kp CARET  &kp BSLH  &kp GRAVE
+&trans  &rgb_ug RGB_OFF  &kp N1  &kp N2  &kp N3  &trans     &kp SPACE              &kp DOWN             &kp MINUS  &kp EXCL       &kp AT       &kp POUND  &kp PIPE  &kp DOT
+                                 &mo 4   &tog 3  &kp SPACE                                              &kp RET    &tog 3         &mo 4
             >;
 
             sensor-bindings = <&scroll_encoder>;
