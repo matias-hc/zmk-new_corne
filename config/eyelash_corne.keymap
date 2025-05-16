@@ -205,9 +205,10 @@
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
+            label = "NVGTN";
         };
 
-        MNav {
+        MsNavigation {
             bindings = <
 &trans  &trans  &trans  &trans    &trans    &trans                        &trans            &trans          &trans          &trans        &trans           &trans  &trans
 &tog 2  &trans  &trans  &mkp MB4  &mkp MB3  &mkp MB5              &trans  &mkp MB2  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
@@ -216,14 +217,15 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+            label = "MsNav";
         };
 
-        NUMBER {
+        Number {
             display-name = "NUMBER";
             bindings = <
 &trans  &trans           &kp N7  &kp N8  &kp N9  &trans                            &kp UP               &kp UNDER  &kp AMPERSAND  &kp STAR     &kp MINUS  &kp PLUS  &kp BSPC
 &tog 4  &kp N0           &kp N4  &kp N5  &kp N6  &trans                  &kp LEFT  &kp RET   &kp RIGHT  &kp EQUAL  &kp DLLR       &kp PERCENT  &kp CARET  &kp BSLH  &kp GRAVE
-&trans  &rgb_ug RGB_OFF  &kp N1  &kp N2  &kp N3  &trans     &kp SPACE              &kp DOWN             &kp MINUS  &kp EXCL       &kp AT       &kp POUND  &kp PIPE  &kp DOT
+&trans  &rgb_ug RGB_TOG  &kp N1  &kp N2  &kp N3  &trans     &kp SPACE              &kp DOWN             &kp MINUS  &kp EXCL       &kp AT       &kp POUND  &kp PIPE  &kp DOT
                                  &tog 4  &tog 3  &kp SPACE                                              &kp RET    &tog 3         &tog 4
             >;
 
@@ -231,7 +233,7 @@
         };
 
         Fn {
-            display-name = "SYMBOL";
+            display-name = "Fn|SYS";
             bindings = <
 &kp F18  &kp F15  &kp F7  &kp F8  &kp F9  &kp F12                                 &mmv MOVE_UP                     &bt BT_SEL 0  &kp K_VOLUME_UP  &kp K_MUTE        &kp K_VOLUME_DOWN  &bt BT_CLR    &sys_reset
 &kp F17  &kp F14  &kp F4  &kp F5  &kp F6  &kp F11                 &mmv MOVE_LEFT  &kp RET         &mmv MOVE_RIGHT  &bt BT_SEL 1  &kp K_PREVIOUS   &kp K_PLAY_PAUSE  &kp K_NEXT         &out OUT_TOG  &bootloader
