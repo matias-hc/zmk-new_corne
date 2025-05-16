@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - LGUI
-  - Navegation
+  - {t: Navegation, h: toggle}
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
-  - NUMBER
+  - {t: NUMBER, h: toggle}
   - $$mdi:apple-keyboard-option$$
   Navegation:
   - $$mdi:keyboard-tab$$
@@ -63,7 +63,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - MNav
+  - {t: MNav, h: toggle}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -93,7 +93,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-command$$
-  - {t: Navegation, h: toggle, type: held}
+  - {t: Navegation, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: Navegation, h: toggle}
@@ -112,7 +112,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: MNav, h: toggle, type: held}
+  - {t: MNav, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB4'
@@ -142,7 +142,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: MNav, h: toggle, type: held}
+  - {t: MNav, h: toggle}
   - '&mkp MB1'
   - '&mkp MB2'
   - {t: MNav, h: toggle}
@@ -161,7 +161,7 @@ layers:
   - {t: '-', s: _}
   - +
   - {t: '$$mdi:backspace$$', type: backspace}
-  - SYMBOL
+  - {t: SYMBOL, h: toggle}
   - {t: '0', s: )}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
@@ -190,12 +190,12 @@ layers:
   - '#'
   - '|'
   - {t: ., s: '>'}
-  - SYMBOL
+  - {t: SYMBOL, h: toggle}
   - {t: NUMBER, h: toggle}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: NUMBER, h: toggle, type: held}
-  - SYMBOL
+  - {t: NUMBER, h: toggle}
+  - {t: SYMBOL, h: toggle}
   SYMBOL:
   - F18
   - F15
@@ -210,7 +210,7 @@ layers:
   - VOLUME DOWN
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: F17, type: held alternate}
+  - F17
   - F14
   - F4
   - F5
@@ -239,12 +239,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
-  - {t: SYMBOL, h: toggle, type: held alternate}
+  - {t: SYMBOL, h: toggle}
   - {t: qwerty, h: toggle}
   - {t: '$$mdi:keyboard-space$$', type: held}
   - {t: '$$mdi:keyboard-return$$', type: held alternate}
-  - {t: qwerty, h: toggle, type: held alternate}
-  - {t: SYMBOL, h: toggle, type: held alternate}
+  - {t: qwerty, h: toggle}
+  - {t: SYMBOL, h: toggle}
 combos:
 - p: [2, 3]
   k: <
