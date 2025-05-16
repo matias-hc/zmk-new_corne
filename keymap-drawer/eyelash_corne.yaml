@@ -63,7 +63,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: MNav, h: toggle}
+  - MNav
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -93,10 +93,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-command$$
-  - {t: qwerty, h: toggle, type: held}
+  - {t: Navegation, h: toggle, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: qwerty, h: toggle}
+  - {t: Navegation, h: toggle}
   - $$mdi:apple-keyboard-option$$
   MNav:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -112,7 +112,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: MNav, h: toggle}
+  - {t: MNav, h: toggle, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB4'
@@ -142,10 +142,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: qwerty, h: toggle}
+  - {t: MNav, h: toggle, type: held}
   - '&mkp MB1'
   - '&mkp MB2'
-  - {t: qwerty, h: toggle}
+  - {t: MNav, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -153,27 +153,27 @@ layers:
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - {t: ., s: '>'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
-  - Sft+_
-  - Sft+&
-  - Sft+*
+  - _
+  - '&'
+  - '*'
   - {t: '-', s: _}
-  - Sft++
+  - +
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: SYMBOL, h: toggle}
+  - SYMBOL
   - {t: '0', s: )}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - {t: ., s: '>'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - {t: '=', s: +}
-  - Sft+$
-  - Sft+%
-  - {t: ., s: '>'}
+  - $
+  - '%'
+  - ^
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -181,21 +181,21 @@ layers:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - {t: ., s: '>'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - {t: '-', s: _}
-  - Sft+!
-  - Sft+@
-  - Sft+#
-  - Sft+|
+  - '!'
+  - '@'
+  - '#'
+  - '|'
   - {t: ., s: '>'}
-  - {t: SYMBOL, h: toggle}
-  - {t: qwerty, h: toggle}
+  - SYMBOL
+  - {t: NUMBER, h: toggle}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: qwerty, h: toggle, type: held}
-  - {t: SYMBOL, h: toggle}
+  - {t: NUMBER, h: toggle, type: held}
+  - SYMBOL
   SYMBOL:
   - F18
   - F15
@@ -210,7 +210,7 @@ layers:
   - VOLUME DOWN
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - F17
+  - {t: F17, type: held alternate}
   - F14
   - F4
   - F5
@@ -239,9 +239,73 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
-  - {t: SYMBOL, h: toggle}
+  - {t: SYMBOL, h: toggle, type: held alternate}
   - {t: qwerty, h: toggle}
   - {t: '$$mdi:keyboard-space$$', type: held}
   - {t: '$$mdi:keyboard-return$$', type: held alternate}
-  - {t: qwerty, h: toggle}
-  - {t: SYMBOL, h: toggle}
+  - {t: qwerty, h: toggle, type: held alternate}
+  - {t: SYMBOL, h: toggle, type: held alternate}
+combos:
+- p: [2, 3]
+  k: <
+  l: [qwerty, NUMBER]
+- p: [3, 4]
+  k: {t: '[', s: '{'}
+  l: [qwerty, NUMBER]
+- p: [3, 9]
+  k: '*'
+  l: [qwerty, NUMBER]
+- p: [4, 8]
+  k: +
+  l: [qwerty, NUMBER]
+- p: [8, 9]
+  k: {t: ']', s: '}'}
+  l: [qwerty, NUMBER]
+- p: [9, 10]
+  k: '>'
+  l: [qwerty, NUMBER]
+- p: [14, 15]
+  k: '~'
+  l: [qwerty, NUMBER]
+- p: [15, 16]
+  k: {t: '`', s: '~'}
+  l: [qwerty, NUMBER]
+- p: [16, 17]
+  k: (
+  l: [qwerty, NUMBER]
+- p: [16, 24]
+  k: $
+  l: [qwerty, NUMBER]
+- p: [17, 23]
+  k: {t: '=', s: +}
+  l: [qwerty, NUMBER]
+- p: [18, 22]
+  k: '&'
+  l: [qwerty, NUMBER]
+- p: [23, 24]
+  k: )
+  l: [qwerty, NUMBER]
+- p: [24, 25]
+  k: ':'
+  l: [qwerty, NUMBER]
+- p: [25, 26]
+  k: {t: \, s: '|'}
+  l: [qwerty, NUMBER]
+- p: [30, 31]
+  k: '|'
+  l: [qwerty, NUMBER]
+- p: [31, 32]
+  k: '{'
+  l: [qwerty, NUMBER]
+- p: [28, 41]
+  k: $$mdi:apple-keyboard-caps$$
+  l: [qwerty, NUMBER]
+- p: [31, 38]
+  k: '!'
+  l: [qwerty, NUMBER]
+- p: [32, 37]
+  k: {t: '-', s: _}
+  l: [qwerty, NUMBER]
+- p: [33, 36]
+  k: _
+  l: [qwerty, NUMBER]
