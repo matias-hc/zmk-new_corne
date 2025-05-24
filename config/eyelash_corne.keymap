@@ -178,6 +178,18 @@
             key-positions = <33 36>;
             layers = <0 3>;
         };
+
+        cbRBrc {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <37 38>;
+            layers = <0 3>;
+        };
+
+        cbSmCln {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <38 39>;
+            layers = <0 3>;
+        };
     };
 
     keymap {
