@@ -309,3 +309,9 @@ combos:
 - p: [33, 36]
   k: _
   l: [qwerty, NUMBER]
+- p: [37, 38]
+  k: '}'
+  l: [qwerty, NUMBER]
+- p: [38, 39]
+  k: {t: ;, s: ':'}
+  l: [qwerty, NUMBER]
